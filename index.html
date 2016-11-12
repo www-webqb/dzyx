@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title> </title>
+</head>
+<style>
+ html,body{
+	padding:0;
+	margin: 0;
+	width: 100%;
+	height:10px;
+	overflow:hidden; 
+	background:url(2.jpg);
+	color: #fff;
+	font-size: 16px;
+	}
+	.box{
+		width: 100%;
+		height: 50px;
+		position: absolute;
+		/*bottom: 0;*/
+		left: 0;
+		background: #646;
+		color: #000;
+        font-size: 20px;
+        /*line-height: 50px;*/
+        font-weight: bold;
+        z-index: 3;
+	}
+	.box div{
+       width: 33%;
+       float: left;
+	}
+	.box div p{
+		width: 50%;
+		text-align: center;
+		float: left;
+	}
+</style>
+<body>
+	<div class="box">
+		<div class="scorebox">
+			<p id="scoretitle">分数:</p>
+			<p id="score">0</p>
+		</div>
+		<div class="lifebox">
+			<p id="lifetitle">生命值:</p>
+			<p id="life">5</p>
+		</div>
+		<div class="stepbox">
+			<p id="steptitle">关卡:</p>
+			<p id="step">1</p>
+		</div>
+	</div>
+</body>
+<script src="youxi.js"></script>
+<script>
+	var game=new game();
+	game.play();
+</script>
+</html>
